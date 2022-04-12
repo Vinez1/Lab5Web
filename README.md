@@ -81,6 +81,64 @@ Pemakaian method dalam objek
 ```
 
 ![method](foto/3.png)
-<p align="center">Gambar 5.3 Tampilan method
+<p align="left">Gambar 5.3 Tampilan method
 
 pemakaian  Prompt
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="U>TF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemasukan Data</title>
+</head>
+<body>
+    <script language = "JavaScript">
+        <!-- 
+            var nama = prompt("siapa nama anda?","masukan nama anda");  
+            document.write("hai, " + nama);
+        //-->
+    </script>
+</body>
+</html>
+```
+
+![](foto/4.png)
+<p align="center">Gambar 5.4
+<br>
+
+![](foto/5.png)
+<p align="center">Gambar 5.5
+
+Pembuatan fungsi dan cara pemanggilannya
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="U>TF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program JavaScript</title>
+    <script lang="Javascript">
+        function pesan (){
+            alert ("memanggil javascript lewat body onload")
+        }
+    </script>
+</head>
+<body
+    onload="pesan()">
+</body>
+</html>
+```
+
+![](foto/6.png)
+<p align="center">Gambar 5.6
+
+## Dasar Pemrograman Di Javascript
+
+Operasi dasar aritmatika
+
+
