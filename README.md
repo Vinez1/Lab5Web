@@ -245,3 +245,15 @@ dan hasilnya akan seperti ini
 </body>
 </html>
 ```
+
+dan hasilnnya akan seperti ini
+
+![](foto/11.png)
+<p align="center">Gambar 5.11
+
+![](foto/12.png)
+<p align="center">Gambar 5.12
+
+![](foto/13.png)
+<p align="center">Gambar 5.13
+
