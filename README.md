@@ -140,5 +140,108 @@ Pembuatan fungsi dan cara pemanggilannya
 ## Dasar Pemrograman Di Javascript
 
 Operasi dasar aritmatika
+``` html <br>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>contoh program javascript</title>
+        <script language = "javascript">
+            function test(val1,val2)
+            {
+                document.write("<br>"+"perkalian : val1*val2"+"<br>")
+                document.write(val1*val2)
+                document.write("<br>"+"pembagian : val1/val2"+"<br>")
+                document.write(val1/val2)
+                document.write("<br>"+"penjumlahan : val1+val2"+"<br>")
+                document.write(val1+val2)
+                document.write("<br>"+"pengurangan : val1-val2"+"<br>")
+                document.write(val1-val2)
+                document.write("<br>"+"modulus : val1%val2"+"<br>")
+                document.write(val1%val2)
+            }   
+        </script>
+    </head>
+    <body>
+        <input type="button" name="button1" value="arithmetic" onclick=test(9,4)>
+    </body>
+</html>
+``` 
+Lalu hasilnya akan seperti ini.
 
+ ![](foto/7.png)
+ <p align="center">Gambar 5.7
 
+ ![](foto/8.png)
+ <p align="center">Gambar 5.8
+
+Seleksi kondisi (if..else)
+```html <br>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>contoh if-else</title>
+        <script language = "javascript">
+            <!--
+            var nilai= prompt("nilai (0-100): ",0);
+            var hasil ="";
+            if (nilai >=60)
+            hasil = "lulus";
+            else
+            hasil + "tidak lulus";
+            document.write("hasil: " + hasil);
+            //-->
+        </script>
+    </head>
+    </body>
+</html>
+```
+
+dan hasilnya akan seperti ini
+
+![](foto/9.png)
+<p align="center">Gambar 5.9
+
+![](foto/10.png)
+<p align="center">Gambar 5.10
+
+### <b>Penggunaan operator switch untuk seleksi kondisi<b>
+
+```html <br>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>contoh program javascript</title>
+
+        <script language="javascript">
+            function test()
+            {
+                val1=window.prompt("input nilai (1-5):")
+                switch (val1)
+                {
+                    case "1" :
+                        document.write("bilangan satu")
+                        break
+                    case "2" : 
+                        document.write("bilangan dua")
+                        break
+                    case "3" : 
+                        document.write("bilangan tiga")
+                        break
+                    case "4" : 
+                        document.write("bilangan empat")
+                        break
+                    case "5" :
+                        document.write("bilangan lima")
+                        break
+                     default : 
+                        document.write("bilangan lainnya")
+
+                }
+            }
+        </script>
+    </head>
+<body>
+    <input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>
+```
