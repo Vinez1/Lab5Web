@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div><h1>Form Validasi</h1></div>
+    <div class="form">
+        <form action="" class="validasi" onsubmit="return validasi()" name="formValidasi">
+            <div>
+                <label for="namaLengkap"><b>Nama Lengkap</b></label> <br>
+                <input type="text" name="NamaLengkap" />
+            </div>
+            <div>
+                <label for="NIM"><b>NIM</b></label> <br>
+                <input type="text" name="NIM" />
+            </div>
+            <div>
+                <label for="email"><b>Email</b></label> <br>
+                <input type="email" name="Email" />
+            </div>
+            <div>
+                <label for="prodi"><b>Prodi</b></label> <br>
+                <select name="prodi" id="Prodi">
+                    <option value="">Prodi</option>
+                    <option value="Teknik Informatika">teknik Informatika</option>
+                    <option value="Teknik Sipil">Teknik Sipil</option>
+                    <option value="Teknik Industri">Teknik Industri</option>
+                    <option value="Teknik Mesin">Teknik Mesin</option>
+                </select>
+            </div>
+            <div>
+                <label for="Alamat"><b>Alamat</b></label> <br>
+                <textarea name="" id="Alamat" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="Submit">
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>

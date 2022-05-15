@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+    font-size: 50px;
+
+}
+form{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    margin-top: 80px;
+    margin-left: 450px;
+    margin-right: 350px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3)x;
+    
+}
+form p > label {
+    display: inline-block;
+    width: 90px;
+    
+}
+form input[type="text"]{
+    width: 350px;
+
+} 
+form input[type="email"]{
+    width: 350px;
+    border: 1px solid #197a43;
+} 
+
+form textarea {
+    border: 1px solid #197a43;
+    width: 350px ;
+}
+form input[type="submit"] {
+    border: 1px solid #197a43;  
+    background-color: #197a43;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+body{
+    background-image: url(https://www.kangbor.my.id/wp-content/uploads/2021/06/2.universitas-pelita-bangsa-cikarang-660x330.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
