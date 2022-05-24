@@ -371,3 +371,162 @@ Pilihan menggunakan checkBox dengan perhitungan otomatis
 ![](foto/18.png)
 <p align="center">Gambar 5.18
 
+## Pertanyaan dan Tugas
+
+1. Buat script untuk melakukan validasi pada isian form.
+
+## Dibawah ini terdapat script dan hasilnya dari pertanyaan tersebut
+
+1. Pertama membuat file dengan nama <b>form.html</b>
+2. Lalu mengisi <b>form.html</b> dengan codingan
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=?, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div><h1>Form Validasi</h1></div>
+    <div class="form">
+        <form action="" class="validasi" onsubmit="return validasi()" name="formValidasi">
+            <div>
+                <label for="namaLengkap"><b>Nama Lengkap</b></label> <br>
+                <input type="text" name="NamaLengkap" />
+            </div>
+            <div>
+                <label for="NIM"><b>NIM</b></label> <br>
+                <input type="text" name="NIM" />
+            </div>
+            <div>
+                <label for="email"><b>Email</b></label> <br>
+                <input type="email" name="Email" />
+            </div>
+            <div>
+                <label for="prodi"><b>Prodi</b></label> <br>
+                <select name="prodi" id="Prodi">
+                    <option value="">Prodi</option>
+                    <option value="Teknik Informatika">teknik Informatika</option>
+                    <option value="Teknik Sipil">Teknik Sipil</option>
+                    <option value="Teknik Industri">Teknik Industri</option>
+                    <option value="Teknik Mesin">Teknik Mesin</option>
+                </select>
+            </div>
+            <div>
+                <label for="Alamat"><b>Alamat</b></label> <br>
+                <textarea name="" id="Alamat" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="Submit">
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>
+```
+
+lalu membuat function validasi untuk mengecek hasil inputan yang telah dibuat
+
+```js
+function validasi() {
+    let namalengkap = document.forms["formValidasi"]["NamaLengkap"].value;
+    let nim = document.forms["formValidasi"]["NIM"].value;
+    let email = document.forms["formValidasi"]["Email"].value;
+    let prodi = document.forms["formValidasi"]["Prodi"].value;
+    let alamat = document.forms["formValidasi"]["Alamat"].value;
+    
+    if (namalengkap == "" || nim == "" || email == "" || prodi == "" || alamat == "" ) {
+      alert("Field must be filled out");
+      return false;
+    }
+  }
+```
+
+kita menangkap nilai value dari form input dan memasukkannya kedalam variabel dalam bentuk let
+
+```js
+let namalengkap = document.forms["formValidasi"]["NamaLengkap"].value;
+let nim = document.forms["formValidasi"]["NIM"].value;
+let email = document.forms["formValidasi"]["Email"].value;
+let prodi = document.forms["formValidasi"]["Prodi"].value;
+let alamat = document.forms["formValidasi"]["Alamat"].value;
+```
+
+dan untuk memastikan di setiap variabel 
+
+```js
+ if (namalengkap == "" || nim == "" || email == "" || prodi == "" || alamat == "" ) {
+    alert("Field must be filled out");
+    return false;
+}
+```
+
+dan berikut ini file style.css nya
+
+```css
+h1{
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+    font-size: 50px;
+
+}
+form{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    margin-top: 80px;
+    margin-left: 500px;
+    margin-right: 350px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3)x;
+}
+form p > label {
+    display: inline-block;
+    width: 90px;
+}
+form input[type="text"]{
+    width: 350px;
+
+} 
+form input[type="email"]{
+    width: 350px;
+
+} 
+
+form textarea {
+    border: 1px solid #197a43;
+    width: 350px ;
+}
+form input[type="submit"] {
+    border: 1px solid #197a43;  
+    background-color: #197a43;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+body{
+    background-image: url(https://www.kangbor.my.id/wp-content/uploads/2021/06/2.universitas-pelita-bangsa-cikarang-660x330.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+```
+
+dan ini merupaka hasil dari kode di webnya.
+
+![](foto/19.png)
+<p align="center">Gambar 6.19
+
+Jika salah satu ada yang kosong maka akan muncul seperti ini
+
+![](foto/20.png)
+<p align="center">Gambar 6.20
